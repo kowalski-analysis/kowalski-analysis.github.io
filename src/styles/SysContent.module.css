@@ -1,0 +1,237 @@
+.intro {
+  font-style: italic;
+  font-size: 0.92rem;
+  color: var(--gray);
+  margin-bottom: 2rem;
+  border-left: 2px solid var(--amber-dim);
+  padding-left: 1rem;
+  line-height: 1.68;
+}
+
+/* Track switcher — switches between cert track roadmap and lab posts */
+.trackTabs {
+  display: flex;
+  gap: 0;
+  margin-bottom: 2.4rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.trackTab {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--gray);
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 0.55rem 1.2rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+  margin-bottom: -1px;
+}
+.trackTab:hover { color: var(--amber); }
+.trackTab.active {
+  color: var(--amber);
+  border-bottom-color: var(--amber);
+}
+
+/* ── ROADMAP VIEW ─────────────────────────────────────── */
+.roadmap {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.track {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 1.6rem;
+  transition: border-color 0.2s;
+}
+.track:hover { border-color: var(--border-hi); }
+
+.trackHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--border-dim);
+}
+
+.trackName {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  color: var(--white);
+  letter-spacing: 0.04em;
+}
+
+.trackStatus {
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.15rem 0.5rem;
+  border: 1px solid;
+}
+.trackStatus.active   { color: var(--amber); border-color: var(--amber-dim); }
+.trackStatus.planned  { color: var(--gray-dim); border-color: var(--border); }
+.trackStatus.complete { color: var(--green); border-color: var(--green-dim); }
+
+.levels {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.level {
+  display: grid;
+  grid-template-columns: 22px 110px 1fr auto;
+  gap: 0 1rem;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 11px;
+}
+
+.levelNum {
+  color: var(--gray-dim);
+  font-size: 9.5px;
+  text-align: right;
+}
+
+.levelLabel {
+  color: var(--gray-dim);
+  font-size: 9.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.levelExam {
+  color: var(--white);
+  font-size: 11px;
+  letter-spacing: 0.02em;
+}
+
+.levelBadge {
+  font-size: 9px;
+  padding: 0.12rem 0.45rem;
+  border: 1px solid;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+.levelBadge.earned   { color: var(--green);    border-color: var(--green-dim);  }
+.levelBadge.progress { color: var(--amber);    border-color: var(--amber-dim);  }
+.levelBadge.planned  { color: var(--gray-dim); border-color: var(--border-dim); }
+.levelBadge.goal     { color: var(--amber);    border-color: var(--amber-dim);  background: var(--amber-pale); }
+
+/* ── LAB POSTS VIEW ───────────────────────────────────── */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.4rem;
+}
+
+.filterBtn {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--gray);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 0.25rem 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.12s, border-color 0.12s;
+}
+.filterBtn:hover,
+.filterBtn.active {
+  color: var(--amber);
+  border-color: var(--amber-dim);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 105px 1fr 90px 68px;
+  gap: 1rem;
+  align-items: center;
+  background: var(--bg-card);
+  border: 1px solid var(--border-dim);
+  padding: 0.75rem 1.2rem;
+  text-decoration: none;
+  transition: border-color 0.15s, background 0.15s;
+}
+.item:hover {
+  border-color: var(--amber-dim);
+  background: var(--amber-pale);
+}
+
+.itemTrack {
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  color: var(--amber-dim);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.itemTitle {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--white);
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.itemType {
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  text-align: center;
+  padding: 0.14rem 0.5rem;
+  border: 1px solid;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+.lab       { color: #4af26a; border-color: #0f1f13; }
+.guide     { color: #e8b84b; border-color: #2a1e08; }
+.notes     { color: #96c8f0; border-color: #0e1e30; }
+.walkthrough { color: #c084fc; border-color: #2e1050; }
+
+.itemDate {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--gray-dim);
+  text-align: right;
+}
+
+.more {
+  margin-top: 1.2rem;
+  font-family: var(--font-mono);
+  font-size: 11px;
+}
+.more a {
+  color: var(--amber-dim);
+  text-decoration: none;
+  border-bottom: 1px solid var(--amber-dim);
+  padding-bottom: 1px;
+  letter-spacing: 0.04em;
+  transition: color 0.12s;
+}
+.more a:hover { color: var(--amber); }
+
+@media (max-width: 700px) {
+  .item { grid-template-columns: 1fr 1fr; }
+  .itemDate { display: none; }
+  .level { grid-template-columns: 20px 1fr auto; }
+  .levelLabel { display: none; }
+}

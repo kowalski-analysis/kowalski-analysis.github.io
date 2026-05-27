@@ -1,0 +1,85 @@
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 155px 1fr;
+  gap: 0 2.4rem;
+  padding: 2.2rem 0;
+  border-top: 1px solid var(--border-dim);
+  position: relative;
+}
+.item:last-child {
+  border-bottom: 1px solid var(--border-dim);
+}
+
+/* Timeline dot */
+.item::before {
+  content: '';
+  position: absolute;
+  left: 148px;
+  top: 2.6rem;
+  width: 6px;
+  height: 6px;
+  background: var(--green-dim);
+  border: 1px solid var(--green);
+  z-index: 1;
+}
+
+.date {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--gray-dim);
+  letter-spacing: 0.04em;
+  padding-top: 0.18rem;
+  text-align: right;
+  line-height: 1.55;
+}
+
+.role {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: var(--white);
+  letter-spacing: 0.04em;
+  margin-bottom: 0.15rem;
+}
+
+.org {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--green);
+  letter-spacing: 0.08em;
+  margin-bottom: 0.9rem;
+}
+
+.bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.28rem;
+}
+.bullets li {
+  font-size: 0.9rem;
+  color: var(--gray);
+  padding-left: 1.1rem;
+  position: relative;
+  line-height: 1.58;
+}
+.bullets li::before {
+  content: '-';
+  position: absolute;
+  left: 0;
+  color: var(--green-dim);
+  font-family: var(--font-mono);
+}
+
+@media (max-width: 700px) {
+  .item {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+  }
+  .item::before { display: none; }
+  .date { text-align: left; }
+}

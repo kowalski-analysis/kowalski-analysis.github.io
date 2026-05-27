@@ -1,0 +1,117 @@
+/* ── TRACK SEPARATOR ─────────────────────────────────── */
+.trackBlock {
+  margin-bottom: 3rem;
+}
+.trackBlock:last-child {
+  margin-bottom: 0;
+}
+
+.trackHeading {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--gray-dim);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.trackHeading::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border-dim);
+}
+
+/* offensive track heading accent */
+.offensiveHeading {
+  composes: trackHeading;
+  color: var(--green-dim);
+}
+.offensiveHeading::after {
+  background: var(--green-pale);
+  border-top: 1px solid var(--border);
+}
+
+/* systems track heading accent */
+.sysHeading {
+  composes: trackHeading;
+  color: var(--amber-dim);
+}
+.sysHeading::after {
+  background: var(--amber-pale);
+  border-top: 1px solid var(--border);
+}
+
+/* ── CERT GRID ───────────────────────────────────────── */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
+  gap: 1.1rem;
+}
+
+.group {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 1.4rem 1.5rem;
+  transition: border-color 0.2s;
+}
+.group:hover { border-color: var(--border-hi); }
+
+/* offensive groups get a green left accent on hover */
+.groupOffensive {
+  composes: group;
+}
+.groupOffensive:hover { border-color: var(--green-dim); }
+
+/* systems groups get an amber left accent on hover */
+.groupSystems {
+  composes: group;
+}
+.groupSystems:hover { border-color: var(--amber-dim); }
+
+.issuer {
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 0.85rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-dim);
+}
+.issuerOffensive { composes: issuer; color: var(--green-dim); }
+.issuerSystems   { composes: issuer; color: var(--amber-dim); }
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.32rem;
+}
+.list li {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--off-white);
+  padding-left: 1rem;
+  position: relative;
+  line-height: 1.5;
+}
+.list li::before {
+  content: '>';
+  position: absolute;
+  left: 0;
+  color: var(--gray-dim);
+}
+
+.earned          { color: var(--green)    !important; }
+.earned::before  { color: var(--green)    !important; }
+.progress        { color: var(--amber)    !important; }
+.progress::before{ color: var(--amber-dim)!important; }
+
+.badge {
+  font-size: 9px;
+  color: var(--amber-dim);
+  margin-left: 0.4rem;
+  font-style: italic;
+}

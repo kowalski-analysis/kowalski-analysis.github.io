@@ -1,0 +1,106 @@
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: var(--nav-height);
+  background: rgba(8, 10, 8, 0.97);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--page-pad);
+}
+
+.brand {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--green);
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.brand .prompt { color: var(--gray); }
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  list-style: none;
+}
+.links a {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--gray);
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: color 0.15s;
+  white-space: nowrap;
+}
+.links a:hover,
+.links a.active {
+  color: var(--green);
+}
+
+/* Hamburger */
+.toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  z-index: 210;
+}
+.toggle span {
+  display: block;
+  width: 22px;
+  height: 1px;
+  background: var(--gray);
+  transition: transform 0.25s, opacity 0.25s, background 0.15s;
+}
+.toggle.open span:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+  background: var(--green);
+}
+.toggle.open span:nth-child(2) { opacity: 0; }
+.toggle.open span:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+  background: var(--green);
+}
+
+/* Drawer */
+.drawer {
+  display: none;
+  position: fixed;
+  top: var(--nav-height);
+  left: 0; right: 0;
+  background: rgba(8, 10, 8, 0.99);
+  border-bottom: 1px solid var(--border);
+  z-index: 190;
+  padding: 1.4rem var(--page-pad) 1.8rem;
+  flex-direction: column;
+  gap: 0;
+}
+.drawer.open { display: flex; }
+.drawer a {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--gray);
+  text-decoration: none;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border-dim);
+  transition: color 0.15s;
+}
+.drawer a:last-child { border-bottom: none; }
+.drawer a:hover { color: var(--green); }
+
+@media (max-width: 700px) {
+  .links { display: none; }
+  .toggle { display: flex; }
+}

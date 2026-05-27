@@ -1,0 +1,115 @@
+.intro {
+  font-style: italic;
+  font-size: 0.92rem;
+  color: var(--gray);
+  margin-bottom: 2rem;
+  border-left: 2px solid var(--green-dim);
+  padding-left: 1rem;
+  line-height: 1.68;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.4rem;
+}
+
+.filterBtn {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--gray);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 0.25rem 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.12s, border-color 0.12s;
+}
+.filterBtn:hover,
+.filterBtn.active {
+  color: var(--green);
+  border-color: var(--green-dim);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 95px 1fr 72px 68px;
+  gap: 1rem;
+  align-items: center;
+  background: var(--bg-card);
+  border: 1px solid var(--border-dim);
+  padding: 0.75rem 1.2rem;
+  text-decoration: none;
+  transition: border-color 0.15s, background 0.15s;
+}
+.item:hover {
+  border-color: var(--green-dim);
+  background: var(--green-pale);
+}
+
+.platform {
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  color: var(--green-dim);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.machineName {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--white);
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.diff {
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  text-align: center;
+  padding: 0.14rem 0.5rem;
+  border: 1px solid;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.easy   { color: #4af26a; border-color: #0f1f13; }
+.medium { color: #e8b84b; border-color: #2a1e08; }
+.hard   { color: #e05252; border-color: #3a1010; }
+.insane { color: #c084fc; border-color: #2e1050; }
+
+.date {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--gray-dim);
+  text-align: right;
+}
+
+.more {
+  margin-top: 1.2rem;
+  font-family: var(--font-mono);
+  font-size: 11px;
+}
+.more a {
+  color: var(--green-dim);
+  text-decoration: none;
+  border-bottom: 1px solid var(--green-dim);
+  padding-bottom: 1px;
+  letter-spacing: 0.04em;
+  transition: color 0.12s;
+}
+.more a:hover { color: var(--green); }
+
+@media (max-width: 700px) {
+  .item { grid-template-columns: 1fr 1fr; }
+  .date { display: none; }
+}

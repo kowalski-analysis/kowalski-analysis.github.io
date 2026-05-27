@@ -1,0 +1,55 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1.2rem;
+}
+
+.group {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 1.4rem 1.6rem;
+  transition: border-color 0.2s;
+}
+.group:hover { border-color: var(--border-hi); }
+
+.groupTitle {
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  color: var(--green-dim);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-dim);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.38rem;
+}
+
+.tag {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--gray);
+  border: 1px solid var(--border);
+  padding: 0.18rem 0.58rem;
+  background: var(--bg);
+  cursor: default;
+  transition: color 0.12s, border-color 0.12s;
+}
+.tag:hover {
+  color: var(--white);
+  border-color: var(--gray-dim);
+}
+
+.tagHi {
+  composes: tag;
+  color: var(--amber);
+  border-color: var(--amber-dim);
+}
+.tagHi:hover {
+  color: var(--amber);
+  border-color: var(--amber);
+}

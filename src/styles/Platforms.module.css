@@ -1,0 +1,97 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.1rem;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 1.6rem;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+.card:hover { border-color: var(--border-hi); }
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0; right: 0;
+  border-style: solid;
+  border-width: 0 18px 18px 0;
+  border-color: transparent var(--green-pale) transparent transparent;
+}
+
+.cardName {
+  font-family: var(--font-display);
+  font-size: 0.98rem;
+  color: var(--white);
+  letter-spacing: 0.05em;
+  margin-bottom: 1.1rem;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.38rem;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  padding-bottom: 0.28rem;
+  border-bottom: 1px solid var(--border-dim);
+}
+.stat:last-child { border-bottom: none; padding-bottom: 0; }
+
+.statLabel { color: var(--gray-dim); letter-spacing: 0.06em; }
+.statVal   { color: var(--green); }
+.statVal.amber  { color: var(--amber); }
+.statVal.purple { color: var(--purple); }
+
+/* Awards */
+.awardsHeading {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--white);
+  letter-spacing: 0.04em;
+  margin: 3rem 0 1.4rem;
+}
+.awardsHeading .num { color: var(--green); margin-right: 0.4rem; }
+
+.awardsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.award {
+  display: flex;
+  gap: 1.4rem;
+  align-items: flex-start;
+  border-left: 2px solid var(--border);
+  padding: 0.3rem 0 0.3rem 1rem;
+  transition: border-color 0.15s;
+}
+.award:hover { border-left-color: var(--amber-dim); }
+
+.awardYear {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--gray-dim);
+  min-width: 44px;
+  flex-shrink: 0;
+  padding-top: 0.06rem;
+}
+
+.awardText {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--white);
+  line-height: 1.55;
+}
+.awardText .tag { color: var(--amber); margin-right: 0.4rem; }

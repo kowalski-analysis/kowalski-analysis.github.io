@@ -1,0 +1,123 @@
+.hero {
+  min-height: calc(100vh - var(--nav-height));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: calc(var(--nav-height) + 3rem) var(--page-pad) 5rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.pre {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--green-dim);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  margin-bottom: 1.1rem;
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 7vw, 4.8rem);
+  line-height: 1.07;
+  color: var(--white);
+  letter-spacing: 0.02em;
+  margin-bottom: 0.5rem;
+}
+
+.handle {
+  font-family: var(--font-mono);
+  font-size: clamp(0.95rem, 2.5vw, 1.3rem);
+  color: var(--green);
+  margin-bottom: 1.8rem;
+}
+
+.roles {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--amber);
+  letter-spacing: 0.1em;
+  margin-bottom: 2.8rem;
+  height: 20px;
+  overflow: hidden;
+}
+
+.tagline {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 0.98rem;
+  color: var(--gray);
+  max-width: 540px;
+  line-height: 1.72;
+  margin-bottom: 2.8rem;
+  border-left: 2px solid var(--green-dim);
+  padding-left: 1.1rem;
+}
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-bottom: 0.5rem;
+}
+
+.socialLink {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--gray);
+  text-decoration: none;
+  border: 1px solid var(--border);
+  padding: 0.32rem 0.85rem;
+  letter-spacing: 0.06em;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.socialLink:hover {
+  color: var(--green);
+  border-color: var(--green-dim);
+  background: var(--green-pale);
+}
+
+.socialLink svg {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  fill: currentColor;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.4rem;
+  margin-top: 3.8rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-dim);
+}
+
+.statVal {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  color: var(--green);
+  display: block;
+  line-height: 1;
+  margin-bottom: 0.28rem;
+}
+
+.statLabel {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--gray-dim);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    padding-top: calc(var(--nav-height) + 2rem);
+    padding-bottom: 3rem;
+  }
+  .stats { gap: 1.6rem; }
+}
