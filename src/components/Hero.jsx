@@ -130,7 +130,7 @@ export default function Hero() {
         Kwadwo<br />Agyapong.
       </h1>
 
-      <p className={`${s.handle} cursor`}>kowalski-analysis#</p>
+      <p className={`${s.handle} cursor`}>kowalski@analysis:~# </p>
 
       <p className={s.roles} ref={rolesRef}>&nbsp;</p>
 
