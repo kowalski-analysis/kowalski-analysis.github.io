@@ -3,9 +3,9 @@ import s from '../styles/Contact.module.css'
 const CARDS = [
   {
     method: 'email',
-    value:  'YOUR_EMAIL',
+    value:  'kowalskianalysis@protonmail.com',
     note:   'Preferred for engagement enquiries and security disclosures.',
-    href:   'mailto:YOUR_EMAIL',
+    href:   'mailto:kowalskianalysis@protonmail.com',
   },
   {
     method: 'github',
@@ -33,9 +33,9 @@ const CARDS = [
   },
   {
     method: 'hackthebox',
-    value:  'app.hackthebox.com/users/YOUR_HTB_ID',
+    value:  'https://app.hackthebox.com/users/43616',
     note:   'HTB profile, machine history, rankings.',
-    href:   'https://app.hackthebox.com/users/YOUR_HTB_ID',
+    href:   'https://app.hackthebox.com/users/43616',
   },
 ]
 
@@ -65,10 +65,9 @@ export default function Contact() {
         </div>
 
         <div className={s.pgp}>
-          <p className={s.pgpLabel}>PGP public key fingerprint</p>
+          <p className={s.pgpLabel}>Hello Friend...</p>
           <p className={s.pgpKey}>
-            Add your PGP fingerprint here if you use one,
-            e.g. XXXX XXXX XXXX XXXX XXXX&nbsp; XXXX XXXX XXXX XXXX XXXX
+            I'm looking forward to connecting with you, reach out and lets connect.
           </p>
         </div>
       </div>

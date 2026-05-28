@@ -4,35 +4,34 @@ const PLATFORMS = [
   {
     name: 'HackTheBox',
     stats: [
-      { label: 'rank',           val: 'Hacker',       style: ''  },
-      { label: 'machines owned', val: '50+',           style: ''  },
-      { label: 'global rank',    val: 'Top 5%',        style: ''  },
-      { label: 'active since',   val: '20XX',          style: ''  },
+      { label: 'rank',           val: 'Grandmaster lvl 92', style: ''  },
+      { label: 'machines owned', val: '137',           style: ''  },
+      { label: 'global rank',    val: '437',        style: ''  },
+      { label: 'active since',   val: '2022',          style: ''  },
     ],
   },
   {
     name: 'OffSec PG / Labs',
     stats: [
       { label: 'machines', val: 'Active',          style: ''  },
-      { label: 'focus',    val: 'AD, Windows',     style: ''  },
-      { label: 'labs',     val: 'OSCP, OSEP prep', style: ''  },
+      { label: 'focus',    val: 'AD, Windows & Linux Privesc',     style: ''  },
+      { label: 'labs',     val: 'OSCP+ prep', style: ''  },
     ],
   },
   {
     name: 'CTF Competition',
     stats: [
-      { label: 'team',       val: 'Your Team Name', style: ''  },
-      { label: 'ctftime',    val: 'Add profile',    style: ''  },
-      { label: 'categories', val: 'AD, Web, Misc',  style: ''  },
+      { label: 'team',       val: 'Midnyt', style: ''  },
+      { label: 'categories', val: 'Boot2root, jeopardy',  style: ''  },
     ],
   },
 ]
 
 const AWARDS = [
-  { year: '2025', tag: '[cert]', text: 'OSCP — OffSec Certified Professional' },
-  { year: '2025', tag: '[tool]', text: 'SprayAllServices (SAS) — open-source release' },
-  { year: '2025', tag: '[tool]', text: 'PrivescCheck-Color — open-source release' },
-  { year: '2024', tag: '[ctf]',  text: 'Add your competition placements here' },
+   { year: '2026', tag: '[tool]', text: 'SprayAllServices (SAS) — open-source release' },
+  { year: '2026', tag: '[tool]', text: 'PrivescCheck-Color — open-source release' },
+  { year: '2023', tag: '[ctf]',  text: 'BrCTF 2023- Winners' },
+  { year: '2022', tag: '[cert]', text: 'CompTIA Security+' },
 ]
 
 export default function Platforms() {

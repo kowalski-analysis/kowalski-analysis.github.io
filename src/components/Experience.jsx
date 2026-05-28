@@ -2,24 +2,27 @@ import s from '../styles/Experience.module.css'
 
 const JOBS = [
   {
-    date:   '2024 — Present',
-    role:   'Security Researcher & Penetration Tester',
-    org:    'Independent — Accra, Ghana',
+    date:   '2025 — Present',
+    role:   'Network & Security Analyst',
+    org:    'OSTEC LTD — Accra, Ghana',
     bullets: [
-      'Conducted authorized penetration testing engagements for SMBs across Ghana, covering internal network, Active Directory, and web application scope.',
-      'Developed and published SprayAllServices (SAS) — assumed-breach credential validator across 10 protocols using netexec as the execution backend.',
-      'Developed PrivescCheck-Color — ANSI color-enhanced wrapper for PrivescCheck by @itm4n; adopted by the OSCP and HTB community.',
-      'Active CTF competitor on HackTheBox; consistent top-5% global ranking.',
-      'Published technical writeups covering Active Directory attack chains, Windows privilege escalation, and post-exploitation.',
+      'Monitoring enterprise network traffic using SIEM tools (Elastic, Exabeam, Darktrace, QRadar) to identify, analyze, and mitigate potential security threats and anomalies.',
+      'Engineering vulnerability Assessments and Penetration testing, prioritizing patches based on exploitability and asset criticality.',
+      'collaborating on incident response efforts for security alerts, successfully containing malware infections, phishing attempts, and unauthorized access vectors.',
+      
     ],
   },
   {
-    date:   '20XX — 20XX',
-    role:   'Your Previous Role',
-    org:    'Employer Name — Location',
+    date:   '2023 — 2025',
+    role:   'Systems Administrator',
+    org:    'Adjaye & Associates — Accra Studio',
     bullets: [
-      'Replace this with your actual responsibilities.',
-      'Quantify where possible — scope, tools, systems impacted.',
+      'Managed and configured Windows and Linux servers, ensuring 97% uptime for core business applications.',
+      'Maintained Active Directory and Microsoft 365, managing user accounts, security groups, and access permissions.',
+      'Configured and tested daily system backups using Synology, ensuring reliable disaster recovery options.',
+      'Deployed critical security patches and updates across all servers and workstations using WSUS and SCCM.',
+      'Managed endpoint security software, ensuring enterprise-wide protection against malware.',
+      'Enforced data retention policies to meet internal governance and external regulatory compliance standards',
     ],
   },
 ]

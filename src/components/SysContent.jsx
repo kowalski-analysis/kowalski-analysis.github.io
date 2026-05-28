@@ -12,11 +12,6 @@ const CERT_TRACKS = [
     trackStatus: 'active',
     levels: [
       { num: 'L1', label: 'Foundation',    exam: 'EX200 — RHCSA',                        status: 'progress' },
-      { num: 'L2', label: 'Engineer',      exam: 'EX342 — Advanced System Administrator', status: 'planned'  },
-      { num: 'L3', label: 'Specialist',    exam: 'EX415 — Security: Linux',               status: 'planned'  },
-      { num: 'L3', label: 'Specialist',    exam: 'EX436 — High Availability Clustering',  status: 'planned'  },
-      { num: 'L3', label: 'Specialist',    exam: 'EX442 — Linux Performance Tuning',      status: 'planned'  },
-      { num: 'L5', label: 'Architect',     exam: 'RHCA — Enterprise Linux',               status: 'planned', goal: true },
     ],
   },
   {
@@ -32,32 +27,11 @@ const CERT_TRACKS = [
     ],
   },
   {
-    name:        'Ansible Automation',
-    trackStatus: 'planned',
-    levels: [
-      { num: 'L2', label: 'Foundation',    exam: 'EX200 — RHCSA (prerequisite)',          status: 'progress' },
-      { num: 'L3', label: 'Engineer',      exam: 'EX294 — RHCE Ansible',                 status: 'planned'  },
-      { num: 'L4', label: 'Specialist',    exam: 'EX358 — Services Management',          status: 'planned'  },
-      { num: 'L4', label: 'Specialist',    exam: 'EX403 — Deployment & Systems Mgmt',    status: 'planned'  },
-      { num: 'L5', label: 'Architect',     exam: 'RHCA — Ansible',                       status: 'planned', goal: true },
-    ],
-  },
-  {
     name:        'CNCF Kubernetes',
     trackStatus: 'planned',
     levels: [
       { num: 'L1', label: 'Administrator', exam: 'CKA — Certified Kubernetes Administrator',  status: 'planned' },
-      { num: 'L2', label: 'Developer',     exam: 'CKAD — Certified Kubernetes App Developer', status: 'planned' },
       { num: 'L3', label: 'Security',      exam: 'CKS — Certified Kubernetes Security Specialist', status: 'planned' },
-    ],
-  },
-  {
-    name:        'Red Hat AI',
-    trackStatus: 'planned',
-    levels: [
-      { num: 'L2', label: 'Developer',     exam: 'EX267 — Certified Developer in AI (RHOAI)', status: 'planned' },
-      { num: 'L3', label: 'Engineer',      exam: 'RHCE — AI (forthcoming)',                   status: 'planned' },
-      { num: 'L5', label: 'Architect',     exam: 'RHCA — AI (forthcoming)',                   status: 'planned', goal: true },
     ],
   },
 ]
@@ -72,14 +46,12 @@ const FILTERS = [
   { key: 'rhcsa',      label: 'RHCSA'      },
   { key: 'openshift',  label: 'OpenShift'  },
   { key: 'kubernetes', label: 'Kubernetes' },
-  { key: 'ansible',    label: 'Ansible'    },
 ]
 
 const TRACK_LABELS = {
   rhcsa:      'RHCSA',
   openshift:  'OpenShift',
   kubernetes: 'Kubernetes',
-  ansible:    'Ansible',
 }
 
 const POSTS = [
@@ -139,13 +111,7 @@ const POSTS = [
     date:  '2025-07',
     href:  '#',
   },
-  {
-    track: 'ansible',
-    title: 'Ansible Playbooks — Practical Introduction',
-    type:  'guide',
-    date:  '2025-08',
-    href:  '#',
-  },
+
 ]
 
 // ── COMPONENT ─────────────────────────────────────────────────────────────

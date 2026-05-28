@@ -2,12 +2,10 @@ import { useEffect, useRef } from 'react'
 import s from '../styles/Hero.module.css'
 
 const ROLES = [
-  'Security Researcher',
-  'Penetration Tester',
+  'Information Security Enthusiast',
+  'SOC Analyst',
   'CTF Competitor',
-  'Red Team Operator',
-  'Tool Developer',
-  'AD Attack Specialist',
+  'System Engineer',
 ]
 
 const SOCIALS = [
@@ -74,7 +72,7 @@ const SOCIALS = [
   },
   {
     label: 'hackthebox',
-    href:  'https://app.hackthebox.com/users/YOUR_HTB_ID',
+    href:  'https://app.hackthebox.com/users/43616',
     icon: (
       <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M11.996 0L2 5.976V18l9.996 6L22 18V5.976zm0 2.31l7.994
@@ -85,9 +83,9 @@ const SOCIALS = [
 ]
 
 const STATS = [
-  { val: '50+',    label: 'HTB Machines Owned' },
-  { val: 'OSCP',   label: 'Certified'          },
-  { val: 'Top 5%', label: 'HTB Global Rank'    },
+  { val: '137',    label: 'HTB Machines Owned' },
+  { val: 'OSCP+',   label: 'Candidate'          },
+  { val: 'Grandmaster lvl 92', label: 'HTB Global Rank'},
   { val: '2',      label: 'Open-Source Tools'  },
 ]
 
@@ -132,14 +130,14 @@ export default function Hero() {
         Kwadwo<br />Agyapong.
       </h1>
 
-      <p className={`${s.handle} cursor`}>kowalski-analysis</p>
+      <p className={`${s.handle} cursor`}>kowalski-analysis#</p>
 
       <p className={s.roles} ref={rolesRef}>&nbsp;</p>
 
       <p className={s.tagline}>
-        Offensive security practitioner based in Accra, Ghana. Focused on
-        Active Directory attack chains, assumed-breach operations, and
-        open-source tooling for the red team community.
+        Security Operations analyst based in Accra, Ghana. Focused on
+        security engineering, Penetration testing, systems engineering and
+        open-source tooling for the infosec community.
       </p>
 
       <div className={s.socials}>

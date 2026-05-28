@@ -4,37 +4,28 @@ const OFFENSIVE = [
   {
     issuer: 'OffSec',
     certs: [
-      { label: 'OSCP',  status: 'earned'                              },
-      { label: 'OSEP',  status: 'progress', badge: '[planned]'        },
-      { label: 'OSED',  status: 'progress', badge: '[planned]'        },
+      { label: 'OSCP+',  status: 'progress', badge: '[in progress]'},
+      
     ],
   },
   {
     issuer: 'HackTheBox',
     certs: [
       { label: 'HTB CPTS', status: 'progress', badge: '[in progress]' },
-      { label: 'HTB CWEE', status: 'progress', badge: '[planned]'     },
+      { label: 'HTB COAE', status: 'progress', badge: '[planned]'     },
     ],
   },
   {
     issuer: 'Red Team',
     certs: [
-      { label: 'CRTO — Zero-Point Security', status: 'progress', badge: '[in progress]' },
-      { label: 'CRTE — Altered Security',    status: 'progress', badge: '[planned]'     },
+      { label: 'CRTO — Zero-Point Security', status: 'progress', badge: '[planned]' },
+      { label: 'CRTL — Certified Red Team Lead', status: 'progress', badge: '[planned]'},
     ],
   },
 ]
 
 const SYSTEMS = [
-  {
-    issuer: 'Red Hat — Linux',
-    certs: [
-      { label: 'RHCSA — EX200',               status: 'progress', badge: '[in progress]' },
-      { label: 'RHCE — EX342',                status: 'progress', badge: '[planned]'     },
-      { label: 'RHCA — Enterprise Linux',     status: 'progress', badge: '[planned]'     },
-    ],
-  },
-  {
+   {
     issuer: 'Red Hat — OpenShift',
     certs: [
       { label: 'EX280 — OCP Admin',           status: 'progress', badge: '[in progress]' },
@@ -45,19 +36,12 @@ const SYSTEMS = [
       { label: 'RHCA — OpenShift',            status: 'progress', badge: '[goal]'        },
     ],
   },
-  {
-    issuer: 'Red Hat — Ansible',
-    certs: [
-      { label: 'EX294 — RHCE Ansible',        status: 'progress', badge: '[planned]'     },
-      { label: 'RHCA — Ansible',              status: 'progress', badge: '[planned]'     },
-    ],
-  },
+  
   {
     issuer: 'CNCF Kubernetes',
     certs: [
-      { label: 'CKA',                         status: 'progress', badge: '[planned]'     },
-      { label: 'CKAD',                        status: 'progress', badge: '[planned]'     },
-      { label: 'CKS',                         status: 'progress', badge: '[planned]'     },
+      { label: 'CKA - Certified Kubernetes Administrator',status: 'progress', badge: '[planned]'},
+      { label: 'CKS - Certified Kubernetes Security Specialist', status: 'progress', badge: '[planned]'},
     ],
   },
 ]

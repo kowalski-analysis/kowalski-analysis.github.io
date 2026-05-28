@@ -3,9 +3,9 @@ import s from '../styles/About.module.css'
 const META = [
   { key: 'location', val: 'Accra, Ghana',             open: false },
   { key: 'languages', val: 'English, Twi',            open: false },
-  { key: 'focus',    val: 'AD / Red Team / Windows',  open: false },
-  { key: 'interests', val: 'CTF, Tool Dev, OSINT',    open: false },
-  { key: 'learning', val: 'CRTO, CPTS, OpenShift',    open: false },
+  { key: 'focus',    val: 'SOC / AI Pentesting / OpenShift',open: false },
+  { key: 'interests', val: 'CTF, Automation, SRE',    open: false },
+  { key: 'learning', val: 'OSCP+, CPTS, OpenShift',    open: false },
   { key: 'status',   val: 'open to opportunities',    open: true  },
 ]
 
@@ -19,17 +19,17 @@ export default function About() {
         </h2>
 
         <p className={s.body}>
-          I am a <strong>penetration tester and security researcher</strong> based
-          in Accra, Ghana, focused on offensive security, Active Directory attack
-          chains, and red team operations. My work spans CTF competition, authorized
-          security assessments, and building open-source tooling for the wider
+          I am a <strong>Security Operations engineer and Red Team Operations enthusiast</strong> based
+          in Accra, Ghana, focused on detection engineering, Enterprise Systems infrastructure engineering, 
+          and red team operations. My work spans CTF competition, authorized
+          security assessments, Penetration testing and building open-source tooling for the wider
           community.
         </p>
         <p className={s.body}>
-          I spend most of my lab time on <strong>Active Directory
-          exploitation</strong> — Kerberos abuse, credential relay attacks, ADCS
+          I spend most of my lab time on <strong>HackTheBox Season machine drops and ProLabs</strong> — 
+          Kerberos abuse, credential relay attacks, ADCS
           ESC paths, lateral movement and persistence — and document findings in
-          writeups. Currently working through HTB CPTS and studying toward CRTO.
+          writeups. Currently working through OffSec's PEN200 course and studying towards OSCP+.
         </p>
         <p className={s.body}>
           Alongside offensive work I am pursuing the{' '}
