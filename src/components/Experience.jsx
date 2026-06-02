@@ -2,7 +2,7 @@ import s from '../styles/Experience.module.css'
 
 const JOBS = [
   {
-    date:   '2025 — Present',
+    date:   '2025 — Present  ',
     role:   'Network & Security Analyst',
     org:    'OSTEC LTD — Accra, Ghana',
     bullets: [
@@ -13,7 +13,7 @@ const JOBS = [
     ],
   },
   {
-    date:   '2023 — 2025',
+    date:   '2023 — 2025  ',
     role:   'Systems Administrator',
     org:    'Adjaye & Associates — Accra Studio',
     bullets: [
