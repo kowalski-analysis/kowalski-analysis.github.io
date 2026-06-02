@@ -83,10 +83,10 @@ const SOCIALS = [
 ]
 
 const STATS = [
-  { val: '137',    label: 'HTB Machines Owned' },
-  { val: 'OSCP+',   label: 'Candidate'          },
-  { val: 'Grandmaster lvl 92', label: 'HTB Global Rank'},
-  { val: '2',      label: 'Open-Source Tools'  },
+  { val: '137',    label: 'HTB MACHINES OWNED' },
+  { val: 'OSCP+',   label: 'CANDIDATE'          },
+  { val: 'Grandmaster lvl 92', label: 'HTB GLOBAL RANK'},
+  { val: '2',      label: 'OPEN-SOURCE TOOLS'  },
 ]
 
 export default function Hero() {
@@ -130,14 +130,14 @@ export default function Hero() {
         Kwadwo<br />Agyapong.
       </h1>
 
-      <p className={`${s.handle} cursor`}>kowalski@analysis:~# </p>
+      <p className={`${s.handle} cursor`}>kowalski@Onyank0Pwn:~# </p>
 
       <p className={s.roles} ref={rolesRef}>&nbsp;</p>
 
       <p className={s.tagline}>
         Security Operations analyst based in Accra, Ghana. Focused on
-        security engineering, Penetration testing, systems engineering and
-        open-source tooling for the infosec community.
+        security and systems engineering, Penetration testing, and
+        open-source tooling for my infosec profession and the community.
       </p>
 
       <div className={s.socials}>
