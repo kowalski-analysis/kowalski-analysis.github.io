@@ -78,18 +78,8 @@ function ProLabCertificates() {
       <p className={s.prolabHeading}>HackTheBox — ProLab Certificates</p>
       <div className={s.prolabGrid}>
         {PROLABS.map(cert => (
-          
-            key={cert.label}
-            href={`/certificates/${cert.file}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={s.prolabCard}
-          >
-            <img
-              src={`/certificates/${cert.file}`}
-              alt={`${cert.label} ProLab Certificate`}
-              className={s.prolabThumb}
-            />
+          <a key={cert.label} href={`/certificates/${cert.file}`} target="_blank" rel="noopener noreferrer" className={s.prolabCard}>
+            <img src={`/certificates/${cert.file}`} alt={`${cert.label} ProLab Certificate`} className={s.prolabThumb} />
             <p className={s.prolabLabel}>{cert.label}</p>
             <span className={s.prolabType}>{cert.type}</span>
           </a>
