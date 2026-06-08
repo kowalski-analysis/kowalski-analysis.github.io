@@ -75,7 +75,7 @@ function CertGroup({ group, variant }) {
 function ProLabCertificates() {
   return (
     <div className={s.trackBlock}>
-      <p className={s.prolabHeading}>HackTheBox — ProLab Certificates</p>
+      <p className={s.prolabHeading}>HackTheBox — Pro Labs Certificates</p>
       <div className={s.prolabGrid}>
         {PROLABS.map(cert => (
           <a key={cert.label} href={`/certificates/${cert.file}`} target="_blank" rel="noopener noreferrer" className={s.prolabCard}>
