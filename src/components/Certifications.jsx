@@ -28,6 +28,7 @@ const PROLABS = [
   { label: 'Zephyr', type: 'Pro Lab',      file: 'zephyr-certificate.jpg' },
   { label: 'Tengu',  type: 'Mini Pro Lab', file: 'tengu-certificate.jpg'  },
   { label: 'P.O.O',  type: 'Mini Pro Lab', file: 'poo-certificate.jpg'    },
+  { label: 'Reflection',  type: 'Mini Pro Lab', file: 'reflection-certificate.jpg'    },
 ]
 
 const SYSTEMS = [
