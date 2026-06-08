@@ -24,10 +24,10 @@ const OFFENSIVE = [
 ]
 
 const PROLABS = [
-  { label: 'Dante',  type: 'Pro Lab',      file: 'dante.png'  },
-  { label: 'Zephyr', type: 'Pro Lab',      file: 'zephyr.png' },
-  { label: 'Tengu',  type: 'Mini Pro Lab', file: 'tengu.png'  },
-  { label: 'P.O.O',  type: 'Mini Pro Lab', file: 'poo.png'    },
+  { label: 'Dante',  type: 'Pro Lab',      file: 'dante-certificate.jpg'  },
+  { label: 'Zephyr', type: 'Pro Lab',      file: 'zephyr-certificate.jpg' },
+  { label: 'Tengu',  type: 'Mini Pro Lab', file: 'tengu-certificate.jpg'  },
+  { label: 'P.O.O',  type: 'Mini Pro Lab', file: 'poo-certificate.jpg'    },
 ]
 
 const SYSTEMS = [
