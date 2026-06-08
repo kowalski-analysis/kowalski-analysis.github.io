@@ -5,7 +5,6 @@ const OFFENSIVE = [
     issuer: 'OffSec',
     certs: [
       { label: 'OSCP+',  status: 'progress', badge: '[in progress]'},
-      
     ],
   },
   {
@@ -18,14 +17,21 @@ const OFFENSIVE = [
   {
     issuer: 'Red Team',
     certs: [
-      { label: 'CRTO — Zero-Point Security', status: 'progress', badge: '[planned]' },
-      { label: 'CRTL — Certified Red Team Lead', status: 'progress', badge: '[planned]'},
+      { label: 'CRTO — Zero-Point Security',      status: 'progress', badge: '[planned]' },
+      { label: 'CRTL — Certified Red Team Lead',  status: 'progress', badge: '[planned]' },
     ],
   },
 ]
 
+const PROLABS = [
+  { label: 'Dante',  type: 'Pro Lab',      file: 'dante.png'  },
+  { label: 'Zephyr', type: 'Pro Lab',      file: 'zephyr.png' },
+  { label: 'Tengu',  type: 'Mini Pro Lab', file: 'tengu.png'  },
+  { label: 'P.O.O',  type: 'Mini Pro Lab', file: 'poo.png'    },
+]
+
 const SYSTEMS = [
-   {
+  {
     issuer: 'Red Hat — OpenShift',
     certs: [
       { label: 'EX280 — OCP Admin',           status: 'progress', badge: '[in progress]' },
@@ -36,12 +42,11 @@ const SYSTEMS = [
       { label: 'RHCA — OpenShift',            status: 'progress', badge: '[goal]'        },
     ],
   },
-  
   {
     issuer: 'CNCF Kubernetes',
     certs: [
-      { label: 'CKA - Certified Kubernetes Administrator',status: 'progress', badge: '[planned]'},
-      { label: 'CKS - Certified Kubernetes Security Specialist', status: 'progress', badge: '[planned]'},
+      { label: 'CKA - Certified Kubernetes Administrator',        status: 'progress', badge: '[planned]' },
+      { label: 'CKS - Certified Kubernetes Security Specialist',  status: 'progress', badge: '[planned]' },
     ],
   },
 ]
@@ -49,7 +54,6 @@ const SYSTEMS = [
 function CertGroup({ group, variant }) {
   const groupCls  = variant === 'systems' ? s.groupSystems   : s.groupOffensive
   const issuerCls = variant === 'systems' ? s.issuerSystems  : s.issuerOffensive
-
   return (
     <div className={groupCls}>
       <p className={issuerCls}>{group.issuer}</p>
@@ -68,6 +72,33 @@ function CertGroup({ group, variant }) {
   )
 }
 
+function ProLabCertificates() {
+  return (
+    <div className={s.trackBlock}>
+      <p className={s.prolabHeading}>HackTheBox — ProLab Certificates</p>
+      <div className={s.prolabGrid}>
+        {PROLABS.map(cert => (
+          
+            key={cert.label}
+            href={`/certificates/${cert.file}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={s.prolabCard}
+          >
+            <img
+              src={`/certificates/${cert.file}`}
+              alt={`${cert.label} ProLab Certificate`}
+              className={s.prolabThumb}
+            />
+            <p className={s.prolabLabel}>{cert.label}</p>
+            <span className={s.prolabType}>{cert.type}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  )
+}
+
 export default function Certifications() {
   return (
     <section id="certs">
@@ -77,7 +108,7 @@ export default function Certifications() {
           <span className="num">05.</span> Certifications
         </h2>
 
-        {/* Offensive Security track */}
+        {/* ── Offensive Security track ── */}
         <div className={s.trackBlock}>
           <p className={s.offensiveHeading}>Offensive Security</p>
           <div className={s.grid}>
@@ -87,7 +118,10 @@ export default function Certifications() {
           </div>
         </div>
 
-        {/* Systems Engineering track */}
+        {/* ── HackTheBox ProLab Certificates ── */}
+        <ProLabCertificates />
+
+        {/* ── Systems Engineering track ── */}
         <div className={s.trackBlock}>
           <p className={s.sysHeading}>Systems Engineering</p>
           <div className={s.grid}>
