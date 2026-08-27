@@ -11,7 +11,7 @@ const OFFENSIVE = [
     issuer: 'HackTheBox',
     certs: [
       { label: 'HTB CPTS', status: 'progress', badge: '[in progress]' },
-      { label: 'HTB COAE', status: 'progress', badge: '[planned]'     },
+      { label: 'HTB CAPE', status: 'progress', badge: '[planned]'     },
     ],
   },
   {
