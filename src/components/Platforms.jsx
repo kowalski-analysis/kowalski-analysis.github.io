@@ -4,9 +4,9 @@ const PLATFORMS = [
   {
     name: 'HackTheBox',
     stats: [
-      { label: 'rank',           val: 'Grandmaster lvl 92', style: ''  },
-      { label: 'machines owned', val: '137',           style: ''  },
-      { label: 'global rank',    val: '437',        style: ''  },
+      { label: 'rank',           val: 'Grandmaster lvl 94', style: ''  },
+      { label: 'machines owned', val: '148',           style: ''  },
+      { label: 'global rank',    val: '533',        style: ''  },
       { label: 'active since',   val: '2022',          style: ''  },
     ],
   },
@@ -21,7 +21,7 @@ const PLATFORMS = [
   {
     name: 'CTF Competition',
     stats: [
-      { label: 'team',       val: 'Midnyt', style: ''  },
+      { label: 'team',       val: 'midKnyt', style: ''  },
       { label: 'categories', val: 'Boot2root, jeopardy',  style: ''  },
     ],
   },
