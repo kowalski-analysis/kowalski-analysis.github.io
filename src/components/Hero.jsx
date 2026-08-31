@@ -83,7 +83,7 @@ const SOCIALS = [
 ]
 
 const STATS = [
-  { val: '137',    label: 'HTB MACHINES OWNED' },
+  { val: '148',    label: 'HTB MACHINES OWNED' },
   { val: 'OSCP+',   label: 'CANDIDATE'          },
   { val: 'Grandmaster lvl 94', label: 'HTB GLOBAL RANK'},
   { val: '2',      label: 'OPEN-SOURCE TOOLS'  },
