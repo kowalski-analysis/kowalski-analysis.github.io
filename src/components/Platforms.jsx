@@ -5,7 +5,7 @@ const PLATFORMS = [
     name: 'HackTheBox',
     stats: [
       { label: 'rank',           val: 'Grandmaster lvl 94', style: ''  },
-      { label: 'machines owned', val: '148',           style: ''  },
+      { label: 'machines owned', val: '157',           style: ''  },
       { label: 'global rank',    val: '533',        style: ''  },
       { label: 'active since',   val: '2022',          style: ''  },
     ],
@@ -29,7 +29,7 @@ const PLATFORMS = [
 
 const AWARDS = [
    { year: '2026', tag: '[tool]', text: 'SprayAllServices (SAS) — open-source release' },
-  { year: '2026', tag: '[tool]', text: 'PrivescCheck-Color — open-source release' },
+  { year: '2026', tag: '[tool]', text: 'Php2shell-checker — open-source release' },
   { year: '2023', tag: '[ctf]',  text: 'BrCTF 2023- Winners' },
   { year: '2022', tag: '[cert]', text: 'CompTIA Security+' },
 ]
