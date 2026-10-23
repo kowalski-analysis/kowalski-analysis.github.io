@@ -13,7 +13,7 @@ const PROJECTS = [
     lang: 'bash & PowerShell',
     href: 'https://github.com/kowalski-analysis/php2shell-checker',
     desc: 'Detection tooling for CVE-2026-109618 and CVE-2026-109619 (php2shell). Enumerates PHP installations across all discoverable locations on a host, compares each version against the patched release for its branch, and prints the remediation command for the detected package manager. Two scripts, identical in detection logic, built for different host environments.',
-    tags: ['windows', 'Linux' 'php', 'CVE', 'php2shell', 'detection Engineering', 'CVE-2026-109618', 'CVE-2026-109619', 'privilege-escalation', 'exploit'],
+    tags: ['windows', 'Linux', 'php', 'CVE', 'php2shell', 'detection Engineering', 'CVE-2026-109618', 'CVE-2026-109619', 'privilege-escalation', 'exploit'],
   }
 ]
 
