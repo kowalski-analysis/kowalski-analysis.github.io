@@ -6,7 +6,7 @@ const PLATFORMS = [
     stats: [
       { label: 'rank',           val: 'Grandmaster lvl 94', style: ''  },
       { label: 'machines owned', val: '157',           style: ''  },
-      { label: 'global rank',    val: '533',        style: ''  },
+      { label: 'global rank',    val: '437',        style: ''  },
       { label: 'active since',   val: '2022',          style: ''  },
     ],
   },
