@@ -2,18 +2,19 @@ import s from '../styles/Projects.module.css'
 
 const PROJECTS = [
   {
+    name: 'Php2shell-checker',
+    lang: 'bash & PowerShell',
+    href: 'https://github.com/kowalski-analysis/php2shell-checker',
+    desc: 'Detection tooling for CVE-2026-109618 and CVE-2026-109619 (php2shell). Enumerates PHP installations across all discoverable locations on a host, compares each version against the patched release for its branch, and prints the remediation command for the detected package manager. Two scripts, identical in detection logic, built for different host environments.',
+    tags: ['Windows', 'Linux', 'PHP', 'php2shell','CVE', 'php2shell', 'detection engineering', 'CVE-2026-109618', 'CVE-2026-109619', 'privilege-escalation', 'exploit'],
+  },
+
+  {
     name: 'SprayAllServices',
     lang: 'Bash',
     href: 'https://github.com/kowalski-analysis/SprayAllServices',
     desc: 'Assumed-breach credential validator for Windows and Active Directory environments. Tests a given credential set against SMB, SSH, FTP, WinRM, LDAP, MSSQL, RDP, VNC, WMI, and NFS simultaneously using netexec, with ANSI color-coded output, JSON reporting, NTLM pass-the-hash support, CIDR target expansion, and configurable parallel threading.',
     tags: ['active-directory', 'assumed-breach', 'netexec', 'oscp', 'redteam'],
-  },
-  {
-    name: 'Php2shell-checker',
-    lang: 'bash & PowerShell',
-    href: 'https://github.com/kowalski-analysis/php2shell-checker',
-    desc: 'Detection tooling for CVE-2026-109618 and CVE-2026-109619 (php2shell). Enumerates PHP installations across all discoverable locations on a host, compares each version against the patched release for its branch, and prints the remediation command for the detected package manager. Two scripts, identical in detection logic, built for different host environments.',
-    tags: ['windows', 'Linux', 'php', 'CVE', 'php2shell', 'detection Engineering', 'CVE-2026-109618', 'CVE-2026-109619', 'privilege-escalation', 'exploit'],
   }
 ]
 
